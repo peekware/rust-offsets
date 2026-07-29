@@ -1,155 +1,156 @@
-// peekware dump generated on: 2026-07-24 07:28:09 PM UTC+3 
+// game_base @ runtime: 0x7FF86A780000  (image size 0x10F3E000)
+// peekware dump generated on: 2026-07-29 10:40:52 PM UTC+3
 
 #include <cstdint>
 #include <cstring>
 #include <string>
 
-inline std::string Build = "24253723";
+inline std::string Build = "24457949";
 namespace GameAssembly
 {
-	constexpr std::uintptr_t timestamp = 0x6A59C034;
-	constexpr std::uintptr_t type_info_definition_table = 0x1017CBE0;
-	constexpr std::uintptr_t il2cpp_resolve_icall = 0x835170;
-	constexpr std::uintptr_t il2cpp_array_new = 0x835190;
-	constexpr std::uintptr_t il2cpp_assembly_get_image = 0x3D40;
-	constexpr std::uintptr_t il2cpp_class_from_name = 0x81F380;
-	constexpr std::uintptr_t il2cpp_class_get_method_from_name = 0x835590;
-	constexpr std::uintptr_t il2cpp_class_get_type = 0x71D630;
-	constexpr std::uintptr_t il2cpp_domain_get = 0x835EB0;
-	constexpr std::uintptr_t il2cpp_domain_get_assemblies = 0x835ED0;
-	constexpr std::uintptr_t il2cpp_gchandle_get_target = 0x8365E0;
-	constexpr std::uintptr_t il2cpp_gchandle_new = 0x836590;
-	constexpr std::uintptr_t il2cpp_gchandle_free = 0x836680;
-	constexpr std::uintptr_t il2cpp_method_get_name = 0xC3C0;
-	constexpr std::uintptr_t il2cpp_object_new = 0x836F20;
-	constexpr std::uintptr_t il2cpp_type_get_object = 0x838000;
+	constexpr std::uintptr_t timestamp = 0x6A6A3C20;
+	constexpr std::uintptr_t type_info_definition_table = 0x100DB1B8;
+	constexpr std::uintptr_t il2cpp_resolve_icall = 0x845D60;
+	constexpr std::uintptr_t il2cpp_array_new = 0x845D80;
+	constexpr std::uintptr_t il2cpp_assembly_get_image = 0x4470;
+	constexpr std::uintptr_t il2cpp_class_from_name = 0x82FF70;
+	constexpr std::uintptr_t il2cpp_class_get_method_from_name = 0x846180;
+	constexpr std::uintptr_t il2cpp_class_get_type = 0x71B6B0;
+	constexpr std::uintptr_t il2cpp_domain_get = 0x846AA0;
+	constexpr std::uintptr_t il2cpp_domain_get_assemblies = 0x846AC0;
+	constexpr std::uintptr_t il2cpp_gchandle_get_target = 0x8471D0;
+	constexpr std::uintptr_t il2cpp_gchandle_new = 0x847180;
+	constexpr std::uintptr_t il2cpp_gchandle_free = 0x847270;
+	constexpr std::uintptr_t il2cpp_method_get_name = 0xC780;
+	constexpr std::uintptr_t il2cpp_object_new = 0x847B10;
+	constexpr std::uintptr_t il2cpp_type_get_object = 0x848C40;
 }
 struct il2cpp_api
 {
-	inline static constexpr uintptr_t domain_get = 0x835EB0;
-	inline static constexpr uintptr_t domain_get_assemblies = 0x835ED0;
-	inline static constexpr uintptr_t domain_assembly_open = 0x835EC0;
-	inline static constexpr uintptr_t assembly_get_image = 0x3D40;
-	inline static constexpr uintptr_t class_from_name = 0x81F380;
-	inline static constexpr uintptr_t image_get_class_count = 0x26D0;
-	inline static constexpr uintptr_t image_get_class = 0x8382E0;
-	inline static constexpr uintptr_t class_get_methods = 0x835500;
-	inline static constexpr uintptr_t class_get_method_from_name = 0x835590;
-	inline static constexpr uintptr_t class_get_fields = 0x8352B0;
-	inline static constexpr uintptr_t class_get_nested_types = 0x835330;
-	inline static constexpr uintptr_t class_get_type = 0x71D630;
-	inline static constexpr uintptr_t class_get_name = 0xC330;
-	inline static constexpr uintptr_t class_get_namespace = 0xC3C0;
-	inline static constexpr uintptr_t class_get_parent = 0x15920;
-	inline static constexpr uintptr_t class_get_image = 0x3D40;
-	inline static constexpr uintptr_t class_get_flags = 0x8355E0;
-	inline static constexpr uintptr_t class_get_static_field_data = 0x2960;
-	inline static constexpr uintptr_t class_from_il2cpp_type = 0x835290;
-	inline static constexpr uintptr_t type_get_object = 0x838000;
-	inline static constexpr uintptr_t type_get_class_or_element_class = 0x838020;
-	inline static constexpr uintptr_t type_get_name = 0x838050;
-	inline static constexpr uintptr_t type_get_attrs = 0x838270;
-	inline static constexpr uintptr_t method_get_param_count = 0x836B50;
-	inline static constexpr uintptr_t method_get_name = 0xC3C0;
-	inline static constexpr uintptr_t method_get_param = 0x836B60;
-	inline static constexpr uintptr_t method_get_return_type = 0x11220;
-	inline static constexpr uintptr_t method_get_class = 0xD710;
-	inline static constexpr uintptr_t method_get_flags = 0x836C10;
-	inline static constexpr uintptr_t field_get_offset = 0x7C5110;
-	inline static constexpr uintptr_t field_get_type = 0x4433B0;
-	inline static constexpr uintptr_t field_get_parent = 0xC330;
-	inline static constexpr uintptr_t field_get_name = 0x3D40;
-	inline static constexpr uintptr_t field_get_flags = 0x836150;
-	inline static constexpr uintptr_t field_static_get_value = 0x8362B0;
-	inline static constexpr uintptr_t object_get_class = 0x3D40;
-	inline static constexpr uintptr_t object_new = 0x836F20;
-	inline static constexpr uintptr_t resolve_icall = 0x835170;
-	inline static constexpr uintptr_t gchandle_get_target = 0x8365E0;
-	inline static constexpr uintptr_t gchandle_new = 0x836590;
-	inline static constexpr uintptr_t gchandle_free = 0x836680;
-	inline static constexpr uintptr_t array_new = 0x835190;
-	inline static constexpr uintptr_t string_new = 0x837040;
+	inline static constexpr uintptr_t domain_get = 0x846AA0;
+	inline static constexpr uintptr_t domain_get_assemblies = 0x846AC0;
+	inline static constexpr uintptr_t domain_assembly_open = 0x846AB0;
+	inline static constexpr uintptr_t assembly_get_image = 0x4470;
+	inline static constexpr uintptr_t class_from_name = 0x82FF70;
+	inline static constexpr uintptr_t image_get_class_count = 0x2C80;
+	inline static constexpr uintptr_t image_get_class = 0x848F20;
+	inline static constexpr uintptr_t class_get_methods = 0x8460F0;
+	inline static constexpr uintptr_t class_get_method_from_name = 0x846180;
+	inline static constexpr uintptr_t class_get_fields = 0x845EA0;
+	inline static constexpr uintptr_t class_get_nested_types = 0x845F20;
+	inline static constexpr uintptr_t class_get_type = 0x71B6B0;
+	inline static constexpr uintptr_t class_get_name = 0xC7B0;
+	inline static constexpr uintptr_t class_get_namespace = 0xC780;
+	inline static constexpr uintptr_t class_get_parent = 0x25F20;
+	inline static constexpr uintptr_t class_get_image = 0x4470;
+	inline static constexpr uintptr_t class_get_flags = 0x8461D0;
+	inline static constexpr uintptr_t class_get_static_field_data = 0x2A30;
+	inline static constexpr uintptr_t class_from_il2cpp_type = 0x845E80;
+	inline static constexpr uintptr_t type_get_object = 0x848C40;
+	inline static constexpr uintptr_t type_get_class_or_element_class = 0x848C60;
+	inline static constexpr uintptr_t type_get_name = 0x848C90;
+	inline static constexpr uintptr_t type_get_attrs = 0x848EB0;
+	inline static constexpr uintptr_t method_get_param_count = 0x847740;
+	inline static constexpr uintptr_t method_get_name = 0xC780;
+	inline static constexpr uintptr_t method_get_param = 0x847750;
+	inline static constexpr uintptr_t method_get_return_type = 0xC7D0;
+	inline static constexpr uintptr_t method_get_class = 0xC7A0;
+	inline static constexpr uintptr_t method_get_flags = 0x847800;
+	inline static constexpr uintptr_t field_get_offset = 0x7D5BF0;
+	inline static constexpr uintptr_t field_get_type = 0x440E40;
+	inline static constexpr uintptr_t field_get_parent = 0xC7B0;
+	inline static constexpr uintptr_t field_get_name = 0x4470;
+	inline static constexpr uintptr_t field_get_flags = 0x846D40;
+	inline static constexpr uintptr_t field_static_get_value = 0x846EA0;
+	inline static constexpr uintptr_t object_get_class = 0x4470;
+	inline static constexpr uintptr_t object_new = 0x847B10;
+	inline static constexpr uintptr_t resolve_icall = 0x845D60;
+	inline static constexpr uintptr_t gchandle_get_target = 0x8471D0;
+	inline static constexpr uintptr_t gchandle_new = 0x847180;
+	inline static constexpr uintptr_t gchandle_free = 0x847270;
+	inline static constexpr uintptr_t array_new = 0x845D80;
+	inline static constexpr uintptr_t string_new = 0x847C30;
 };
-inline static constexpr uintptr_t il2cpphandle = 0x8365E0;
+inline static constexpr uintptr_t il2cpphandle = 0x8471D0;
 struct gc_handles
 {
-	inline static constexpr uintptr_t get_target = 0x8365E0;
+	inline static constexpr uintptr_t get_target = 0x8471D0;
 };
 struct klass_rvas
 {
-	inline static constexpr uintptr_t BaseNetworkable = 0xFCD2240;
-	inline static constexpr uintptr_t BaseEntity = 0xFD2C2B8;
-	inline static constexpr uintptr_t BaseCombatEntity = 0xFD4F2F0;
-	inline static constexpr uintptr_t BasePlayer = 0xFCCA7D0;
-	inline static constexpr uintptr_t BaseNpc = 0xFCFF870;
-	inline static constexpr uintptr_t BaseVehicle = 0xFD2D900;
-	inline static constexpr uintptr_t DroppedItemContainer = 0xFD2F190;
-	inline static constexpr uintptr_t OreResourceEntity = 0xFD2F1D0;
-	inline static constexpr uintptr_t CollectibleEntity = 0xFD2E970;
-	inline static constexpr uintptr_t BuildingBlock = 0xFC55100;
-	inline static constexpr uintptr_t BuildingPrivlidge = 0xFC57208;
-	inline static constexpr uintptr_t Door = 0xFD12EB8;
-	inline static constexpr uintptr_t WorldItem = 0xFD2E910;
-	inline static constexpr uintptr_t Signage = 0xFD0C9C0;
-	inline static constexpr uintptr_t MainCamera = 0xFCB7488;
-	inline static constexpr uintptr_t PlayerEyes = 0xFE2ED18;
-	inline static constexpr uintptr_t PlayerModel = 0xFCEA178;
-	inline static constexpr uintptr_t TOD_Sky = 0xFD2F9E8;
-	inline static constexpr uintptr_t Item = 0xFCA95A0;
-	inline static constexpr uintptr_t ItemId = 0xFC821B0;
-	inline static constexpr uintptr_t ConsoleSystem_Command = 0xFCFC270;
-	inline static constexpr uintptr_t PlayerInventory_typenav = 0xFE2ED38;
-	inline static constexpr uintptr_t BaseNetworkable_TypeInfo = 0xFCD2240;
-	inline static constexpr uintptr_t BaseEntity_TypeInfo = 0xFD2C2B8;
-	inline static constexpr uintptr_t BasePlayer_TypeInfo = 0xFCCA7D0;
-	inline static constexpr uintptr_t BaseNetworkable_TypeDefinitionIndex = 0x3023;
-	inline static constexpr uintptr_t BaseEntity_TypeDefinitionIndex = 0x2D9E;
-	inline static constexpr uintptr_t BaseCombatEntity_TypeDefinitionIndex = 0x4664;
-	inline static constexpr uintptr_t BasePlayer_TypeDefinitionIndex = 0x2A91;
-	inline static constexpr uintptr_t BaseNetworkable_TypeInfoSlotIndex = 0xC67;
-	inline static constexpr uintptr_t BaseEntity_TypeInfoSlotIndex = 0x9E2;
-	inline static constexpr uintptr_t BaseCombatEntity_TypeInfoSlotIndex = 0x22A8;
-	inline static constexpr uintptr_t BasePlayer_TypeInfoSlotIndex = 0x6D5;
-	inline static constexpr uintptr_t PlayerEyes_TypeInfo = 0xFE2ED18;
-	inline static constexpr uintptr_t PlayerInventory_TypeInfo = 0xFE2ED38;
-	inline static constexpr uintptr_t PlayerModel_TypeInfo = 0xFCEA178;
-	inline static constexpr uintptr_t ModelState_TypeInfo = 0xFCE9AC0;
-	inline static constexpr uintptr_t PlayerInput_TypeInfo = 0xFCF9140;
-	inline static constexpr uintptr_t BaseProjectile_TypeInfo = 0xFCB78A8;
-	inline static constexpr uintptr_t Projectile_TypeInfo = 0x10180A28;
-	inline static constexpr uintptr_t HitTest_TypeInfo = 0xFC6F420;
-	inline static constexpr uintptr_t HeldEntity_TypeInfo = 0xFD426E0;
-	inline static constexpr uintptr_t BaseViewModel_TypeInfo = 0xFD2F718;
-	inline static constexpr uintptr_t AutoTurret_TypeInfo = 0xFD628E0;
-	inline static constexpr uintptr_t PlayerCorpse_TypeInfo = 0x1018AED0;
-	inline static constexpr uintptr_t LootableCorpse_TypeInfo = 0x10188338;
-	inline static constexpr uintptr_t GameManager_TypeInfo = 0x1018C888;
-	inline static constexpr uintptr_t GameManager_Static_TypeInfo = 0xFCB78E0;
+	inline static constexpr uintptr_t BaseNetworkable = 0xFBF37A0;
+	inline static constexpr uintptr_t BaseEntity = 0xFBF0198;
+	inline static constexpr uintptr_t BaseCombatEntity = 0xFC3DAD8;
+	inline static constexpr uintptr_t BasePlayer = 0xFCDBAF0;
+	inline static constexpr uintptr_t BaseNpc = 0xFC217E0;
+	inline static constexpr uintptr_t BaseVehicle = 0xFBEF0B0;
+	inline static constexpr uintptr_t DroppedItemContainer = 0xFC6F020;
+	inline static constexpr uintptr_t OreResourceEntity = 0xFC67928;
+	inline static constexpr uintptr_t CollectibleEntity = 0xFC6EEC8;
+	inline static constexpr uintptr_t BuildingBlock = 0xFC39688;
+	inline static constexpr uintptr_t BuildingPrivlidge = 0xFC39690;
+	inline static constexpr uintptr_t Door = 0xFC39660;
+	inline static constexpr uintptr_t WorldItem = 0xFC6EE88;
+	inline static constexpr uintptr_t Signage = 0xFC9D620;
+	inline static constexpr uintptr_t MainCamera = 0xFC29470;
+	inline static constexpr uintptr_t PlayerEyes = 0xFD80EB8;
+	inline static constexpr uintptr_t PlayerModel = 0xFC74F60;
+	inline static constexpr uintptr_t TOD_Sky = 0xFC45770;
+	inline static constexpr uintptr_t Item = 0xFCA6978;
+	inline static constexpr uintptr_t ItemId = 0xFBEC228;
+	inline static constexpr uintptr_t ConsoleSystem_Command = 0xFCDD888;
+	inline static constexpr uintptr_t PlayerInventory_typenav = 0xFD80ED8;
+	inline static constexpr uintptr_t BaseNetworkable_TypeInfo = 0xFBF37A0;
+	inline static constexpr uintptr_t BaseEntity_TypeInfo = 0xFBF0198;
+	inline static constexpr uintptr_t BasePlayer_TypeInfo = 0xFCDBAF0;
+	inline static constexpr uintptr_t BaseNetworkable_TypeDefinitionIndex = 0x2E68;
+	inline static constexpr uintptr_t BaseEntity_TypeDefinitionIndex = 0x251B;
+	inline static constexpr uintptr_t BaseCombatEntity_TypeDefinitionIndex = 0x2AF1;
+	inline static constexpr uintptr_t BasePlayer_TypeDefinitionIndex = 0x3A3A;
+	inline static constexpr uintptr_t BaseNetworkable_TypeInfoSlotIndex = 0xAAF;
+	inline static constexpr uintptr_t BaseEntity_TypeInfoSlotIndex = 0x162;
+	inline static constexpr uintptr_t BaseCombatEntity_TypeInfoSlotIndex = 0x738;
+	inline static constexpr uintptr_t BasePlayer_TypeInfoSlotIndex = 0x1681;
+	inline static constexpr uintptr_t PlayerEyes_TypeInfo = 0xFD80EB8;
+	inline static constexpr uintptr_t PlayerInventory_TypeInfo = 0xFD80ED8;
+	inline static constexpr uintptr_t PlayerModel_TypeInfo = 0xFC74F60;
+	inline static constexpr uintptr_t ModelState_TypeInfo = 0xFBC9D40;
+	inline static constexpr uintptr_t PlayerInput_TypeInfo = 0xFC8D518;
+	inline static constexpr uintptr_t BaseProjectile_TypeInfo = 0xFC2D740;
+	inline static constexpr uintptr_t Projectile_TypeInfo = 0x100E8A10;
+	inline static constexpr uintptr_t HitTest_TypeInfo = 0xFCB3EC8;
+	inline static constexpr uintptr_t HeldEntity_TypeInfo = 0xFBE8C98;
+	inline static constexpr uintptr_t BaseViewModel_TypeInfo = 0xFC05F70;
+	inline static constexpr uintptr_t AutoTurret_TypeInfo = 0xFBD8E70;
+	inline static constexpr uintptr_t PlayerCorpse_TypeInfo = 0x100E2898;
+	inline static constexpr uintptr_t LootableCorpse_TypeInfo = 0x100DFB88;
+	inline static constexpr uintptr_t GameManager_TypeInfo = 0x100EA3F0;
+	inline static constexpr uintptr_t GameManager_Static_TypeInfo = 0xFC44898;
 };
 namespace PhysX
 {
-	constexpr std::uintptr_t type_info = 0xFCB7F98;
+	constexpr std::uintptr_t type_info = 0xFC1BB40;
 	constexpr std::uintptr_t static_fields = 0xB8;
 }
 namespace network
 {
-	constexpr std::uintptr_t CLIENT_CONNECTION = 0xC8;
-	constexpr std::uintptr_t CLIENT_CONNECTION_WRAPPER = 0x108;
-	constexpr std::uintptr_t RAKNET_HANDLE_IN_WRAPPER = 0x10;
-	constexpr std::uintptr_t CONNECTION_SERVER_GUID = 0x10;
-	constexpr std::uintptr_t CLIENT_GET_LAST_PING_RVA = 0x76B8930;
+	constexpr std::uintptr_t CLIENT_CONNECTION = 0x0;
+	constexpr std::uintptr_t CLIENT_CONNECTION_WRAPPER = 0x0;
+	constexpr std::uintptr_t RAKNET_HANDLE_IN_WRAPPER = 0x0;
+	constexpr std::uintptr_t CONNECTION_SERVER_GUID = 0x0;
+	constexpr std::uintptr_t CLIENT_GET_LAST_PING_RVA = 0x7668B10;
 }
 namespace game_manager
 {
-	constexpr std::uintptr_t game_manager = 0xFCB78E0;
+	constexpr std::uintptr_t game_manager = 0xFC44898;
 	constexpr std::uintptr_t static_fields = 0xB8;
 }
 namespace console_system
 {
-	constexpr std::uintptr_t find = 0x72596A0;
-	constexpr std::uintptr_t get_override = 0x20;
-	constexpr std::uintptr_t set_override = 0x10;
-	constexpr std::uintptr_t call = 0x58;
+	constexpr std::uintptr_t find = 0x516CDB0;
+	constexpr std::uintptr_t get_override = 0x60;
+	constexpr std::uintptr_t set_override = 0x70;
+	constexpr std::uintptr_t call = 0x18;
 }
 namespace klass_layout
 {
@@ -162,18 +163,18 @@ namespace base_networkable
 	constexpr std::uintptr_t wrapper_class_ptr = 0x8;
 	constexpr std::uintptr_t parent_static_fields = 0x10;
 	constexpr std::uintptr_t hv_offset = 0x18;
-	constexpr std::uintptr_t entities = 0x18;
+	constexpr std::uintptr_t entities = 0x20;
 	constexpr std::uint32_t buffer_list_array = 0x10;
 	constexpr std::uint32_t buffer_list_size = 0x18;
-	constexpr std::uintptr_t client_entities_decryption = 0x103E210;
-	constexpr std::uintptr_t entity_list_wrapper = 0x29AB770;
-	constexpr std::uintptr_t entity_list_decryption = 0x29BFEA0;
-	constexpr std::uintptr_t entity = 0x18;
-	constexpr std::uintptr_t buffer = 0x18;
+	constexpr std::uintptr_t client_entities_decryption = 0x1204220;
+	constexpr std::uintptr_t entity_list_wrapper = 0x1EDA7A0;
+	constexpr std::uintptr_t entity_list_decryption = 0x153E560;
+	constexpr std::uintptr_t entity = 0x20;
+	constexpr std::uintptr_t buffer = 0x20;
 	constexpr std::uintptr_t prefabID = 0x54;
 	constexpr std::uintptr_t parentEntity = 0x38;
-	constexpr std::uintptr_t children = 0x88;
-	constexpr std::uintptr_t net = 0x80;
+	constexpr std::uintptr_t children = 0x80;
+	constexpr std::uintptr_t net = 0x68;
 	constexpr std::uintptr_t globalBroadcast = 0x58;
 	constexpr std::uintptr_t networkRange = 0x64;
 }
@@ -181,9 +182,9 @@ namespace camera
 {
 	constexpr std::uintptr_t camera_static = 0xB8;
 	constexpr std::uintptr_t static_fields = 0xB8;
-	constexpr std::uintptr_t camera_object = 0x8;
-	constexpr std::uintptr_t instance = 0x8;
-	constexpr std::uintptr_t buffer = 0x8;
+	constexpr std::uintptr_t camera_object = 0x10;
+	constexpr std::uintptr_t instance = 0x10;
+	constexpr std::uintptr_t buffer = 0x10;
 	constexpr std::uintptr_t entity = 0x10;
 	constexpr std::uintptr_t position = 0x444;
 	constexpr std::uintptr_t viewMatrix = 0x2FC;
@@ -191,36 +192,36 @@ namespace camera
 	constexpr std::uint32_t projection_layout = 0x1;
 	constexpr std::uintptr_t fieldOfView = 0x170;
 	constexpr std::uintptr_t aspect = 0x4E0;
-	constexpr std::uintptr_t nearClip = 0x430;
-	constexpr std::uintptr_t farClip = 0x458;
+	constexpr std::uintptr_t nearClip = 0x3EC;
+	constexpr std::uintptr_t farClip = 0x3F8;
 	constexpr std::uintptr_t viewProjectionMatrix = 0x2FC;
 	constexpr std::uintptr_t worldToCameraMatrix = 0x70;
-	constexpr std::uintptr_t cullingMask = 0x42C;
+	constexpr std::uintptr_t cullingMask = 0x3E8;
 }
 namespace BasePlayer
 {
 	constexpr std::uintptr_t clActiveItem = 0x568;
-	constexpr std::uintptr_t PlayerEyes = 0x5F8;
-	constexpr std::uintptr_t PlayerInventory = 0x4D0;
+	constexpr std::uintptr_t PlayerEyes = 0x4F8;
+	constexpr std::uintptr_t PlayerInventory = 0x2E0;
 	constexpr std::uintptr_t current_team = 0x538;
-	constexpr std::uintptr_t movement = 0x4E0;
-	constexpr std::uintptr_t player_model = 0x6F0;
+	constexpr std::uintptr_t movement = 0x6F8;
+	constexpr std::uintptr_t player_model = 0x3F0;
 	constexpr std::uintptr_t playerFlags = 0x6B8;
 	constexpr std::uintptr_t userID = 0x700;
-	constexpr std::uintptr_t userIDString = 0x528;
-	constexpr std::uintptr_t display_name = 0x2D8;
-	constexpr std::uintptr_t player_input = 0x3A8;
-	constexpr std::uintptr_t modelState = 0x480;
+	constexpr std::uintptr_t userIDString = 0x420;
+	constexpr std::uintptr_t display_name = 0x4A8;
+	constexpr std::uintptr_t player_input = 0x728;
+	constexpr std::uintptr_t modelState = 0x478;
 	constexpr std::uintptr_t mounted = 0x5C0;
-	constexpr std::uintptr_t Belt = 0x478;
-	constexpr std::uintptr_t _lookingAt = 0x4F0;
+	constexpr std::uintptr_t Belt = 0x528;
+	constexpr std::uintptr_t _lookingAt = 0x458;
 	constexpr std::uintptr_t weaponMoveSpeedScale = 0x798;
 	constexpr std::uintptr_t clothingBlocksAiming = 0x79C;
 	constexpr std::uintptr_t clothingMoveSpeedReduction = 0x7A0;
-	constexpr std::uintptr_t player_rigidbody = 0x340;
+	constexpr std::uintptr_t player_rigidbody = 0x7B8;
 	constexpr std::uintptr_t frozen = 0x388;
-	constexpr std::uintptr_t currentGesture = 0x390;
-	constexpr std::uintptr_t lastSentTick = 0x3A0;
+	constexpr std::uintptr_t currentGesture = 0x380;
+	constexpr std::uintptr_t lastSentTick = 0x390;
 }
 namespace BaseCombatEntity
 {
@@ -237,8 +238,8 @@ namespace BaseEntity
 	constexpr std::uintptr_t bounds = 0x17C;
 	constexpr std::uintptr_t model = 0x1A8;
 	constexpr std::uintptr_t flags = 0x1B0;
-	constexpr std::uintptr_t triggers = 0x98;
-	constexpr std::uintptr_t positionLerp = 0x108;
+	constexpr std::uintptr_t triggers = 0x128;
+	constexpr std::uintptr_t positionLerp = 0x158;
 }
 namespace BaseEntityFlags
 {
@@ -270,9 +271,9 @@ namespace base_player_flags
 }
 namespace ModelState
 {
-	constexpr std::uintptr_t flags = 0x34;
-	constexpr std::uintptr_t waterLevel = 0x14;
-	constexpr std::uintptr_t lookDir = 0x54;
+	constexpr std::uintptr_t flags = 0x3C;
+	constexpr std::uintptr_t waterLevel = 0x58;
+	constexpr std::uintptr_t lookDir = 0x74;
 	constexpr std::uintptr_t Flying = 0x40;
 	constexpr std::uintptr_t Sleeping = 0x8;
 	constexpr std::uintptr_t Mounted = 0x200;
@@ -280,8 +281,8 @@ namespace ModelState
 }
 namespace ItemContainer
 {
-	constexpr std::uintptr_t ItemList = 0x58;
-	constexpr std::uintptr_t flags = 0x48;
+	constexpr std::uintptr_t ItemList = 0x48;
+	constexpr std::uintptr_t flags = 0x68;
 }
 namespace ItemDefinition
 {
@@ -293,18 +294,18 @@ namespace ItemDefinition
 	constexpr std::uintptr_t iconSprite = 0x50;
 	constexpr std::uintptr_t rarity = 0x94;
 	constexpr std::uintptr_t condition = 0xB8;
-	constexpr std::uintptr_t ItemModWearable = 0x168;
+	constexpr std::uintptr_t ItemModWearable = 0x1A8;
 }
 namespace item
 {
-	constexpr std::uintptr_t info = 0x70;
-	constexpr std::uintptr_t itemdefinition = 0x70;
-	constexpr std::uintptr_t uid = 0x40;
-	constexpr std::uintptr_t amount = 0xF8;
-	constexpr std::uintptr_t ammoCount = 0x4C;
+	constexpr std::uintptr_t info = 0xB8;
+	constexpr std::uintptr_t itemdefinition = 0xB8;
+	constexpr std::uintptr_t uid = 0x20;
+	constexpr std::uintptr_t amount = 0x18;
+	constexpr std::uintptr_t ammoCount = 0x38;
 	constexpr std::uintptr_t shortname = 0x28;
 	constexpr std::uintptr_t category = 0x58;
-	constexpr std::uintptr_t HeldEntity = 0x80;
+	constexpr std::uintptr_t HeldEntity = 0x58;
 }
 namespace AttackEntity
 {
@@ -313,10 +314,10 @@ namespace AttackEntity
 }
 namespace BaseProjectile
 {
-	constexpr std::uintptr_t ShotFired = 0x4166A30;
+	constexpr std::uintptr_t ShotFired = 0x5E68300;
 	constexpr std::uintptr_t DidAttackClientside = 0x0;
-	constexpr std::uintptr_t SetAmmoCount = 0x41225E0;
-	constexpr std::uintptr_t BeginCycle = 0x4143360;
+	constexpr std::uintptr_t SetAmmoCount = 0x0;
+	constexpr std::uintptr_t BeginCycle = 0x5E790D0;
 	constexpr std::uintptr_t DoAttack_vtableoff = 0x0;
 	constexpr std::uintptr_t aimCone = 0x400;
 	constexpr std::uintptr_t hipAimCone = 0x404;
@@ -360,19 +361,19 @@ namespace CompoundBowWeapon
 }
 namespace PlayerProjectileUpdate
 {
-	constexpr std::uintptr_t Dispose = 0xAC66260;
-	constexpr std::uintptr_t _disposed = 0x18;
-	constexpr std::uintptr_t ShouldPool = 0x19;
+	constexpr std::uintptr_t Dispose = 0xA9BD8D0;
+	constexpr std::uintptr_t _disposed = 0x30;
+	constexpr std::uintptr_t ShouldPool = 0x31;
 }
 namespace PlayerProjectileAttack
 {
-	constexpr std::uintptr_t hitDistance = 0x1C;
-	constexpr std::uintptr_t hitVelocity = 0x24;
-	constexpr std::uintptr_t travelTime = 0x18;
+	constexpr std::uintptr_t hitDistance = 0x2C;
+	constexpr std::uintptr_t hitVelocity = 0x20;
+	constexpr std::uintptr_t travelTime = 0x10;
 }
 namespace PlayerAttack
 {
-	constexpr std::uintptr_t projectileID = 0x10;
+	constexpr std::uintptr_t projectileID = 0x20;
 }
 namespace projectile
 {
@@ -383,58 +384,46 @@ namespace projectile
 	constexpr std::uintptr_t initialDistance = 0x44;
 	constexpr std::uintptr_t swimSpeed = 0xFC;
 	constexpr std::uintptr_t swimScale = 0xF0;
-	constexpr std::uintptr_t owner = 0x108;
-	constexpr std::uintptr_t sourceProjectilePrefab = 0x110;
-	constexpr std::uintptr_t mod = 0x118;
-	constexpr std::uintptr_t hitTest = 0x128;
-	constexpr std::uintptr_t launchTime = 0x158;
-	constexpr std::uintptr_t currentVelocity = 0x168;
-	constexpr std::uintptr_t currentPosition = 0x15C;
+	constexpr std::uintptr_t owner = 0x120;
+	constexpr std::uintptr_t sourceProjectilePrefab = 0x1E8;
+	constexpr std::uintptr_t mod = 0x108;
+	constexpr std::uintptr_t hitTest = 0x1D8;
+	constexpr std::uintptr_t launchTime = 0x0;
+	constexpr std::uintptr_t currentVelocity = 0x0;
+	constexpr std::uintptr_t currentPosition = 0x0;
 	constexpr std::uintptr_t projectileID = 0x20;
-	constexpr std::uintptr_t maxDistance = 0x140;
-	constexpr std::uintptr_t traveledDistance = 0x174;
-	constexpr std::uintptr_t traveledTime = 0x178;
-	constexpr std::uintptr_t previousTraveledTime = 0x17C;
-	constexpr std::uintptr_t sentPosition = 0x180;
-	constexpr std::uintptr_t previousPosition = 0x18C;
-	constexpr std::uintptr_t previousVelocity = 0x198;
-	constexpr std::uintptr_t integrity = 0x13C;
+	constexpr std::uintptr_t maxDistance = 0x0;
+	constexpr std::uintptr_t traveledDistance = 0x0;
+	constexpr std::uintptr_t traveledTime = 0x0;
+	constexpr std::uintptr_t previousTraveledTime = 0x0;
+	constexpr std::uintptr_t sentPosition = 0x0;
+	constexpr std::uintptr_t previousPosition = 0x0;
+	constexpr std::uintptr_t previousVelocity = 0x0;
+	constexpr std::uintptr_t integrity = 0x1F0;
 }
 namespace HitTest
 {
-	constexpr std::uintptr_t type = 0x24;
-	constexpr std::uintptr_t attackray = 0x44;
-	constexpr std::uintptr_t rayhit = 0x70;
-	constexpr std::uintptr_t damageproperties = 0xE8;
-	constexpr std::uintptr_t gameobject = 0xB8;
-	constexpr std::uintptr_t collider = 0xA0;
-	constexpr std::uintptr_t ignoredtypes = 0x30;
-	constexpr std::uintptr_t hittransform = 0x60;
-	constexpr std::uintptr_t hitpart = 0x28;
-	constexpr std::uintptr_t hitmaterial = 0x18;
-	constexpr std::uintptr_t multihit = 0xC0;
-	constexpr std::uintptr_t besthit = 0x10;
-	constexpr std::uintptr_t hitdistance = 0x68;
-	constexpr std::uintptr_t radius = 0xB0;
-	constexpr std::uintptr_t forgivness = 0x6C;
-	constexpr std::uintptr_t didhit = 0x20;
-	constexpr std::uintptr_t maxdistance = 0xAC;
-	constexpr std::uintptr_t hitpoint = 0xD8;
-	constexpr std::uintptr_t hitnormal = 0x38;
-	constexpr std::uintptr_t ignoreentity = 0xD0;
-	constexpr std::uintptr_t hitentity = 0xC8;
-}
-namespace playerattack
-{
-	constexpr std::uintptr_t pointEnd = 0x10;
-	constexpr std::uintptr_t hitPositionLocal = 0x78;
-	constexpr std::uintptr_t hitPositionWorld = 0x20;
-	constexpr std::uintptr_t hitNormalWorld = 0x54;
-	constexpr std::uintptr_t hitNormalLocal = 0x6C;
-	constexpr std::uintptr_t pointStart = 0x2C;
-	constexpr std::uintptr_t hitPartID = 0x68;
-	constexpr std::uintptr_t hitMaterialID = 0x50;
-	constexpr std::uintptr_t hitBone = 0x40;
+	constexpr std::uintptr_t type = 0xA8;
+	constexpr std::uintptr_t attackray = 0x58;
+	constexpr std::uintptr_t rayhit = 0x78;
+	constexpr std::uintptr_t damageproperties = 0xC0;
+	constexpr std::uintptr_t gameobject = 0xB0;
+	constexpr std::uintptr_t collider = 0x30;
+	constexpr std::uintptr_t ignoredtypes = 0x20;
+	constexpr std::uintptr_t hittransform = 0x40;
+	constexpr std::uintptr_t hitpart = 0xD4;
+	constexpr std::uintptr_t hitmaterial = 0x70;
+	constexpr std::uintptr_t multihit = 0xBD;
+	constexpr std::uintptr_t besthit = 0xBC;
+	constexpr std::uintptr_t hitdistance = 0x48;
+	constexpr std::uintptr_t radius = 0xB8;
+	constexpr std::uintptr_t forgivness = 0x38;
+	constexpr std::uintptr_t didhit = 0x2C;
+	constexpr std::uintptr_t maxdistance = 0x28;
+	constexpr std::uintptr_t hitpoint = 0xC8;
+	constexpr std::uintptr_t hitnormal = 0x4C;
+	constexpr std::uintptr_t ignoreentity = 0x18;
+	constexpr std::uintptr_t hitentity = 0x10;
 }
 namespace BaseMelee
 {
@@ -533,7 +522,7 @@ namespace PlayerInput
 }
 namespace PlayerModel
 {
-	constexpr std::uintptr_t _multiMesh = 0x448;
+	constexpr std::uintptr_t _multiMesh = 0x3B8;
 	constexpr std::uintptr_t collision = 0xD0;
 	constexpr std::uintptr_t fullMask = 0x208;
 	constexpr std::uintptr_t newVelocity = 0x31C;
@@ -543,20 +532,20 @@ namespace PlayerModel
 }
 namespace SkinnedMultiMesh
 {
-	constexpr std::uintptr_t RendererList = 0x58;
-	constexpr std::uintptr_t Renderers = 0x58;
+	constexpr std::uintptr_t RendererList = 0x50;
+	constexpr std::uintptr_t Renderers = 0x50;
 }
 namespace chams
 {
-	constexpr std::uintptr_t player_model_multi_mesh = 0x448;
-	constexpr std::uintptr_t multi_mesh_renderer_list = 0x58;
+	constexpr std::uintptr_t player_model_multi_mesh = 0x3B8;
+	constexpr std::uintptr_t multi_mesh_renderer_list = 0x50;
 }
 namespace PlayerInventory
 {
 	constexpr std::uintptr_t loot = 0x48;
-	constexpr std::uintptr_t containerBelt = 0x58;
+	constexpr std::uintptr_t containerBelt = 0x28;
 	constexpr std::uintptr_t containerMain = 0x38;
-	constexpr std::uintptr_t containerWear = 0x30;
+	constexpr std::uintptr_t containerWear = 0x58;
 }
 namespace movement
 {
@@ -615,11 +604,11 @@ namespace WorldItem
 namespace mapview
 {
 	constexpr std::uintptr_t static_fields_off = 0xB8;
-	constexpr std::uintptr_t RVA_RustWorld = 0xFCCA1E8;
-	constexpr std::uintptr_t World_Size_off = 0x40;
+	constexpr std::uintptr_t RVA_RustWorld = 0xFBD1EB8;
+	constexpr std::uintptr_t World_Size_off = 0x60;
 	constexpr std::uintptr_t World_Seed_off = 0x20;
-	constexpr std::uintptr_t World_Name_off = 0xC0;
-	constexpr std::uintptr_t RVA_MapInterface = 0xFC602E8;
+	constexpr std::uintptr_t World_Name_off = 0x88;
+	constexpr std::uintptr_t RVA_MapInterface = 0xFCA48F0;
 	constexpr std::uintptr_t MI_Instance_off = 0x8;
 	constexpr std::uintptr_t MI_View_off = 0x60;
 	constexpr std::uintptr_t MV_mapImage_off = 0x20;
@@ -630,7 +619,7 @@ namespace mapview
 }
 namespace AutoTurret
 {
-	constexpr std::uintptr_t authorizedPlayers = 0x3C8;
+	constexpr std::uintptr_t authorizedPlayers = 0x418;
 	constexpr std::uintptr_t muzzlePos = 0x4A0;
 	constexpr std::uintptr_t gun_yaw = 0x4B8;
 	constexpr std::uintptr_t lastYaw = 0x0;
@@ -649,7 +638,7 @@ namespace PlayerCorpse
 namespace LootableCorpse
 {
 	constexpr std::uintptr_t playerSteamID = 0x308;
-	constexpr std::uintptr_t _playerName = 0x318;
+	constexpr std::uintptr_t _playerName = 0x310;
 }
 namespace HackableLockedCrate
 {
@@ -659,19 +648,19 @@ namespace HackableLockedCrate
 namespace HeldEntity
 {
 	constexpr std::uintptr_t ownerItemUID = 0x2D0;
-	constexpr std::uintptr_t viewModel = 0x1F0;
+	constexpr std::uintptr_t viewModel = 0x2C8;
 	constexpr std::uint32_t viewModel_wrapper_kind = 0x4;
 	constexpr std::uint32_t viewModel_inner_off = 0x28;
 	constexpr std::uintptr_t _punches = 0x240;
 }
 namespace ItemIcon
 {
-	constexpr std::uintptr_t item_icon_c = 0xFD533B8;
-	constexpr std::uintptr_t type_info = 0xFD533B8;
+	constexpr std::uintptr_t item_icon_c = 0xFC0CFA0;
+	constexpr std::uintptr_t type_info = 0xFC0CFA0;
 	constexpr std::uintptr_t static_fields = 0xB8;
 	constexpr std::uintptr_t containerLootStartTimes = 0x0;
-	constexpr std::uintptr_t TryToMove = 0x4D49790;
-	constexpr std::uintptr_t RunTimedAction = 0x4D52190;
+	constexpr std::uintptr_t TryToMove = 0x0;
+	constexpr std::uintptr_t RunTimedAction = 0x0;
 	constexpr std::uintptr_t backgroundImage = 0xE8;
 }
 namespace Dictionary
@@ -696,10 +685,10 @@ namespace ViewModel
 namespace BaseViewModel
 {
 	constexpr std::uintptr_t useViewModelCamera = 0x40;
-	constexpr std::uintptr_t model = 0x88;
-	constexpr std::uintptr_t bob = 0xC8;
-	constexpr std::uintptr_t lower = 0xC0;
-	constexpr std::uintptr_t sway = 0xB8;
+	constexpr std::uintptr_t model = 0xC0;
+	constexpr std::uintptr_t bob = 0x108;
+	constexpr std::uintptr_t lower = 0xA0;
+	constexpr std::uintptr_t sway = 0x100;
 	constexpr std::uintptr_t ironSights = 0xB0;
 }
 namespace model
@@ -735,23 +724,23 @@ namespace model
 }
 namespace EffectNetwork
 {
-	constexpr std::uintptr_t type_info = 0xFD6FDA8;
-	constexpr std::uintptr_t static_type_info = 0xFCB17E0;
+	constexpr std::uintptr_t type_info = 0x100DD1F0;
+	constexpr std::uintptr_t static_type_info = 0xFC83208;
 	constexpr std::uintptr_t static_fields = 0xB8;
 	constexpr std::uintptr_t instance = 0x8;
-	constexpr std::uintptr_t hitPosition = 0xB0;
+	constexpr std::uintptr_t hitPosition = 0x98;
 }
 namespace singleton_typeinfos
 {
-	constexpr std::uintptr_t SingletonComponent_UI_LoadingScreen = 0xFC64060;
-	constexpr std::uintptr_t SingletonComponent_MixerSnapshotManager = 0xFD2F058;
+	constexpr std::uintptr_t SingletonComponent_UI_LoadingScreen = 0xFBBB658;
+	constexpr std::uintptr_t SingletonComponent_MixerSnapshotManager = 0xFC14FA0;
 }
 namespace TOD_Sky_Static
 {
-	constexpr std::uintptr_t tod_sky_c = 0xFD2F9E8;
+	constexpr std::uintptr_t tod_sky_c = 0x0;
 	constexpr std::uintptr_t static_fields = 0xB8;
-	constexpr std::uintptr_t instances = 0x28;
-	constexpr std::uintptr_t instancesView = 0x28;
+	constexpr std::uintptr_t instances = 0x30;
+	constexpr std::uintptr_t instancesView = 0x30;
 	constexpr std::uintptr_t listItems = 0x10;
 	constexpr std::uintptr_t listSize = 0x18;
 	constexpr std::uintptr_t arrayData = 0x20;
@@ -834,13 +823,13 @@ namespace system_list
 }
 namespace convar_graphics
 {
-	constexpr std::uintptr_t convar_graphics = 0xFCDA610;
+	constexpr std::uintptr_t convar_graphics = 0xFC1C9C0;
 	constexpr std::uintptr_t convar_graphics_instance = 0xB8;
-	constexpr std::uintptr_t fov = 0xA0;
+	constexpr std::uintptr_t fov = 0xF0;
 }
 namespace convar_admin
 {
-	constexpr std::uintptr_t convar_admin = 0xFD49F48;
+	constexpr std::uintptr_t convar_admin = 0xFCA4BE0;
 	constexpr std::uintptr_t playerIds = 0x20;
 }
 
@@ -854,13 +843,13 @@ uintptr_t decryption::client_entities(uint64_t a1)
 		ecx = *(std::uint32_t*)(rdx);
 		eax = *(std::uint32_t*)(rdx);
 		rdx = (std::uint32_t*)((std::uint8_t*)rdx + 0x4);
-		ecx = ecx + 0xB97F1AE1;
+		ecx = ecx - 0x5ADF7A4E;
+		ecx = ecx ^ 0xD5554086;
 		eax = ecx;
-		ecx = ecx << 0x1D;
-		eax = eax >> 0x3;
+		ecx = ecx << 0x3;
+		eax = eax >> 0x1D;
 		ecx = ecx | eax;
-		ecx = ecx + 0x32BEE2A5;
-		ecx = ecx ^ 0xE58A30D8;
+		ecx = ecx - 0x33B0F636;
 		*((std::uint32_t*)rdx - 1) = ecx;
 		--r8d;
 	} while (r8d);
@@ -877,16 +866,13 @@ uintptr_t decryption::entity_list(uint64_t a1)
 		ecx = *(std::uint32_t*)(rdx);
 		eax = *(std::uint32_t*)(rdx);
 		rdx = (std::uint32_t*)((std::uint8_t*)rdx + 0x4);
+		ecx = ecx + 0x4FAAB989;
 		eax = ecx;
-		ecx = ecx << 0xA;
-		eax = eax >> 0x16;
+		ecx = ecx << 0x19;
+		eax = eax >> 0x7;
 		ecx = ecx | eax;
-		ecx = ecx ^ 0xF6BF245D;
-		eax = ecx;
-		ecx = ecx << 0xF;
-		eax = eax >> 0x11;
-		ecx = ecx | eax;
-		ecx = ecx ^ 0x9BBD4311;
+		ecx = ecx ^ 0xCC2A9C79;
+		ecx = ecx - 0x4EFECC5E;
 		*((std::uint32_t*)rdx - 1) = ecx;
 		--r8d;
 	} while (r8d);
@@ -896,15 +882,15 @@ uintptr_t decryption::entity_list(uint64_t a1)
 uintptr_t decryption::clActiveItem(uint64_t a1)
 {
 	std::uint32_t* rdx = (std::uint32_t*)&a1;
-	std::uint32_t r9d = 0x1;
+	std::uint32_t r9d = 0x2;
 	std::uint32_t eax, edx;
 	do {
 		edx = *(std::uint32_t*)(rdx);
 		eax = *(std::uint32_t*)(rdx);
 		rdx = (std::uint32_t*)((std::uint8_t*)rdx + 0x4);
-		edx = (edx << 0x1E) | (edx >> 0x2);
-		edx = edx ^ 0x4ED09CE6;
-		edx = edx - 0x2521E783;
+		edx = edx ^ 0x8AE931D7;
+		edx = (edx << 0x17) | (edx >> 0x9);
+		edx = edx + 0x25B129D5;
 		*((std::uint32_t*)rdx - 1) = edx;
 		--r9d;
 	} while (r9d);
@@ -921,12 +907,12 @@ uintptr_t decryption::PlayerInventory(uint64_t a1)
 		ecx = *(std::uint32_t*)(rdx);
 		eax = *(std::uint32_t*)(rdx);
 		rdx = (std::uint32_t*)((std::uint8_t*)rdx + 0x4);
-		ecx = ecx + 0x343EF771;
+		ecx = ecx + 0x664E932F;
+		ecx = ecx ^ 0x13E262C6;
 		eax = ecx;
 		ecx = ecx << 0x19;
 		eax = eax >> 0x7;
 		ecx = ecx | eax;
-		ecx = ecx - 0x38A35400;
 		*((std::uint32_t*)rdx - 1) = ecx;
 		--r8d;
 	} while (r8d);
@@ -944,11 +930,14 @@ uintptr_t decryption::PlayerEyes(uint64_t a1)
 		eax = *(std::uint32_t*)(rdx);
 		rdx = (std::uint32_t*)((std::uint8_t*)rdx + 0x4);
 		eax = ecx;
+		ecx = ecx << 0xA;
+		eax = eax >> 0x16;
+		ecx = ecx | eax;
+		ecx = ecx + 0xB4D7B78;
+		eax = ecx;
 		ecx = ecx << 0x1A;
 		eax = eax >> 0x6;
 		ecx = ecx | eax;
-		ecx = ecx ^ 0x441ADFFD;
-		ecx = ecx - 0x426353FC;
 		*((std::uint32_t*)rdx - 1) = ecx;
 		--r8d;
 	} while (r8d);
@@ -956,15 +945,15 @@ uintptr_t decryption::PlayerEyes(uint64_t a1)
 }
 
 inline uint32_t decryption::decrypt_fov(uint32_t val) {
-	val -= 0x7F13D9D6;
-	val ^= 0xB8C0173B;
+	val = (val << 0x18) | (val >> 0x8);
+	val ^= 0xBC9EC312;
 	val = (val << 0x4) | (val >> 0x1C);
 	return val;
 }
 
 inline uint32_t decryption::encrypt_fov(uint32_t val) {
 	val = (val >> 0x4) | (val << 0x1C);
-	val ^= 0xB8C0173B;
-	val += 0x7F13D9D6;
+	val ^= 0xBC9EC312;
+	val = (val >> 0x18) | (val << 0x8);
 	return val;
 }
