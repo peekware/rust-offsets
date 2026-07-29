@@ -1,5 +1,5 @@
 // game_base @ runtime: 0x7FF86A780000  (image size 0x10F3E000)
-// peekware dump generated on: 2026-07-29 10:40:52 PM UTC+3
+// peekware  dump generated on: 2026-07-29 10:40:52 PM UTC+3
 
 #include <cstdint>
 #include <cstring>
