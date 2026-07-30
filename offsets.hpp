@@ -1,5 +1,5 @@
-// game_base @ runtime: 0x7FF86A780000  (image size 0x10F3E000)
-// peekware  dump generated on: 2026-07-29 10:40:52 PM UTC+3
+// game_base @ runtime: 0x7FFE1C490000  (image size 0x10F3E000)
+// peekware dump generated on: 2026-07-30 12:15:12 PM UTC+3
 
 #include <cstdint>
 #include <cstring>
@@ -87,9 +87,9 @@ struct klass_rvas
 	inline static constexpr uintptr_t DroppedItemContainer = 0xFC6F020;
 	inline static constexpr uintptr_t OreResourceEntity = 0xFC67928;
 	inline static constexpr uintptr_t CollectibleEntity = 0xFC6EEC8;
-	inline static constexpr uintptr_t BuildingBlock = 0xFC39688;
-	inline static constexpr uintptr_t BuildingPrivlidge = 0xFC39690;
-	inline static constexpr uintptr_t Door = 0xFC39660;
+	inline static constexpr uintptr_t BuildingBlock = 0xFC53E98;
+	inline static constexpr uintptr_t BuildingPrivlidge = 0xFC34510;
+	inline static constexpr uintptr_t Door = 0xFC208C8;
 	inline static constexpr uintptr_t WorldItem = 0xFC6EE88;
 	inline static constexpr uintptr_t Signage = 0xFC9D620;
 	inline static constexpr uintptr_t MainCamera = 0xFC29470;
@@ -121,7 +121,7 @@ struct klass_rvas
 	inline static constexpr uintptr_t HitTest_TypeInfo = 0xFCB3EC8;
 	inline static constexpr uintptr_t HeldEntity_TypeInfo = 0xFBE8C98;
 	inline static constexpr uintptr_t BaseViewModel_TypeInfo = 0xFC05F70;
-	inline static constexpr uintptr_t AutoTurret_TypeInfo = 0xFBD8E70;
+	inline static constexpr uintptr_t AutoTurret_TypeInfo = 0x0;
 	inline static constexpr uintptr_t PlayerCorpse_TypeInfo = 0x100E2898;
 	inline static constexpr uintptr_t LootableCorpse_TypeInfo = 0x100DFB88;
 	inline static constexpr uintptr_t GameManager_TypeInfo = 0x100EA3F0;
@@ -134,10 +134,10 @@ namespace PhysX
 }
 namespace network
 {
-	constexpr std::uintptr_t CLIENT_CONNECTION = 0x0;
-	constexpr std::uintptr_t CLIENT_CONNECTION_WRAPPER = 0x0;
-	constexpr std::uintptr_t RAKNET_HANDLE_IN_WRAPPER = 0x0;
-	constexpr std::uintptr_t CONNECTION_SERVER_GUID = 0x0;
+	constexpr std::uintptr_t CLIENT_CONNECTION = 0x40;
+	constexpr std::uintptr_t CLIENT_CONNECTION_WRAPPER = 0x108;
+	constexpr std::uintptr_t RAKNET_HANDLE_IN_WRAPPER = 0x10;
+	constexpr std::uintptr_t CONNECTION_SERVER_GUID = 0x20;
 	constexpr std::uintptr_t CLIENT_GET_LAST_PING_RVA = 0x7668B10;
 }
 namespace game_manager
@@ -159,6 +159,7 @@ namespace klass_layout
 }
 namespace base_networkable
 {
+	constexpr std::uintptr_t base_networkable = 0xFBF37A0;
 	constexpr std::uintptr_t static_fields = 0xB8;
 	constexpr std::uintptr_t wrapper_class_ptr = 0x8;
 	constexpr std::uintptr_t parent_static_fields = 0x10;
@@ -172,6 +173,8 @@ namespace base_networkable
 	constexpr std::uintptr_t entity = 0x20;
 	constexpr std::uintptr_t buffer = 0x20;
 	constexpr std::uintptr_t prefabID = 0x54;
+	constexpr std::uintptr_t prefabName = 0x28;
+	constexpr std::uintptr_t prefabNameNoExt = 0x70;
 	constexpr std::uintptr_t parentEntity = 0x38;
 	constexpr std::uintptr_t children = 0x80;
 	constexpr std::uintptr_t net = 0x68;
@@ -180,6 +183,7 @@ namespace base_networkable
 }
 namespace camera
 {
+	constexpr std::uintptr_t main_camera = 0xFC29470;
 	constexpr std::uintptr_t camera_static = 0xB8;
 	constexpr std::uintptr_t static_fields = 0xB8;
 	constexpr std::uintptr_t camera_object = 0x10;
@@ -239,6 +243,7 @@ namespace BaseEntity
 	constexpr std::uintptr_t model = 0x1A8;
 	constexpr std::uintptr_t flags = 0x1B0;
 	constexpr std::uintptr_t triggers = 0x128;
+	constexpr std::uintptr_t position = 0x0;
 	constexpr std::uintptr_t positionLerp = 0x158;
 }
 namespace BaseEntityFlags
@@ -384,21 +389,21 @@ namespace projectile
 	constexpr std::uintptr_t initialDistance = 0x44;
 	constexpr std::uintptr_t swimSpeed = 0xFC;
 	constexpr std::uintptr_t swimScale = 0xF0;
-	constexpr std::uintptr_t owner = 0x120;
-	constexpr std::uintptr_t sourceProjectilePrefab = 0x1E8;
+	constexpr std::uintptr_t owner = 0x110;
+	constexpr std::uintptr_t sourceProjectilePrefab = 0x128;
 	constexpr std::uintptr_t mod = 0x108;
 	constexpr std::uintptr_t hitTest = 0x1D8;
-	constexpr std::uintptr_t launchTime = 0x0;
-	constexpr std::uintptr_t currentVelocity = 0x0;
-	constexpr std::uintptr_t currentPosition = 0x0;
-	constexpr std::uintptr_t projectileID = 0x20;
-	constexpr std::uintptr_t maxDistance = 0x0;
-	constexpr std::uintptr_t traveledDistance = 0x0;
-	constexpr std::uintptr_t traveledTime = 0x0;
-	constexpr std::uintptr_t previousTraveledTime = 0x0;
-	constexpr std::uintptr_t sentPosition = 0x0;
-	constexpr std::uintptr_t previousPosition = 0x0;
-	constexpr std::uintptr_t previousVelocity = 0x0;
+	constexpr std::uintptr_t launchTime = 0x140;
+	constexpr std::uintptr_t currentVelocity = 0x168;
+	constexpr std::uintptr_t currentPosition = 0x15C;
+	constexpr std::uintptr_t projectileID = 0x130;
+	constexpr std::uintptr_t maxDistance = 0x1A4;
+	constexpr std::uintptr_t traveledDistance = 0x174;
+	constexpr std::uintptr_t traveledTime = 0x178;
+	constexpr std::uintptr_t previousTraveledTime = 0x17C;
+	constexpr std::uintptr_t sentPosition = 0x180;
+	constexpr std::uintptr_t previousPosition = 0x18C;
+	constexpr std::uintptr_t previousVelocity = 0x198;
 	constexpr std::uintptr_t integrity = 0x1F0;
 }
 namespace HitTest
@@ -511,7 +516,6 @@ namespace PlayerEyes
 {
 	constexpr std::uintptr_t viewOffset = 0x40;
 	constexpr std::uintptr_t bodyRotation = 0x50;
-	constexpr std::uintptr_t world_position = 0x60;
 	constexpr std::uintptr_t worldPosition = 0x60;
 }
 namespace PlayerInput
@@ -527,8 +531,7 @@ namespace PlayerModel
 	constexpr std::uintptr_t fullMask = 0x208;
 	constexpr std::uintptr_t newVelocity = 0x31C;
 	constexpr std::uintptr_t isNpc = 0x490;
-	constexpr std::uintptr_t visibleNullable = 0x0;
-	constexpr std::uintptr_t position = 0x2F8;
+	constexpr std::uintptr_t visibleNullable = 0xC4;
 }
 namespace SkinnedMultiMesh
 {
@@ -622,17 +625,162 @@ namespace AutoTurret
 	constexpr std::uintptr_t authorizedPlayers = 0x418;
 	constexpr std::uintptr_t muzzlePos = 0x4A0;
 	constexpr std::uintptr_t gun_yaw = 0x4B8;
-	constexpr std::uintptr_t lastYaw = 0x0;
+	constexpr std::uintptr_t lastYaw = 0x430;
+	constexpr std::uintptr_t lastYawRotation = 0x430;
 	constexpr std::uintptr_t gun_pitch = 0x4C0;
 	constexpr std::uintptr_t sightRange = 0x4C8;
 }
-namespace PatrolHelicopter
+namespace patrolhelicopter
 {
 	constexpr std::uintptr_t weakspots = 0x2C0;
+	constexpr std::uintptr_t rotorPivot = 0x2C8;
 	constexpr std::uintptr_t mainRotor = 0x2D0;
+	constexpr std::uintptr_t tailRotor = 0x2E8;
+	constexpr std::uintptr_t rocket_tube_left = 0x300;
+	constexpr std::uintptr_t rocket_tube_right = 0x308;
+	constexpr std::uintptr_t left_gun_yaw = 0x310;
+	constexpr std::uintptr_t left_gun_pitch = 0x318;
+	constexpr std::uintptr_t spotlightTarget = 0x3F0;
+	constexpr std::uintptr_t myAI = 0x3C0;
+}
+namespace base_vehicle
+{
+	constexpr std::uintptr_t mountPoints = 0x3E0;
+	constexpr std::uintptr_t shouldShowHudHealth = 0x3A2;
+	constexpr std::uintptr_t ignoreDamageFromOutside = 0x3D4;
+}
+namespace bradleyapc
+{
+	constexpr std::uintptr_t viewDistance = 0x3B4;
+	constexpr std::uintptr_t searchRange = 0x3B8;
+	constexpr std::uintptr_t engineSound = 0x2C0;
+	constexpr std::uintptr_t chasisLurchAngleDelta = 0x308;
+	constexpr std::uintptr_t chasisLurchSpeedDelta = 0x30C;
+}
+namespace local_player_static
+{
+	constexpr std::uintptr_t local_player = 0xFCB2720;
+	constexpr std::uintptr_t static_fields = 0xB8;
+	constexpr std::uintptr_t entity = 0x8;
+	constexpr std::uintptr_t hv_in_wrapper = 0x0;
+	constexpr std::uint32_t is_wrapped = 0x1;
+}
+namespace magazine
+{
+	constexpr std::uintptr_t capacity = 0x18;
+	constexpr std::uintptr_t contents = 0x1C;
+	constexpr std::uintptr_t ammoType = 0x20;
+	constexpr std::uintptr_t definition = 0x10;
+}
+namespace timed_explosive
+{
+	constexpr std::uintptr_t timerAmountMin = 0x1F0;
+	constexpr std::uintptr_t timerAmountMax = 0x1F4;
+	constexpr std::uintptr_t minExplosionRadius = 0x1F8;
+	constexpr std::uintptr_t explosionRadius = 0x1FC;
+	constexpr std::uintptr_t explodeOnContact = 0x200;
+	constexpr std::uintptr_t canStick = 0x201;
+	constexpr std::uintptr_t onlyDamageParent = 0x203;
+	constexpr std::uintptr_t damageTypes = 0x268;
+	constexpr std::uintptr_t explosionEffectOffset = 0x214;
+	constexpr std::uintptr_t explosionMatchesNormal = 0x220;
+}
+namespace flameturret
+{
+	constexpr std::uintptr_t upper = 0x398;
+	constexpr std::uintptr_t arc = 0x3A0;
+	constexpr std::uintptr_t triggeredDuration = 0x3A4;
+	constexpr std::uintptr_t flameRange = 0x3A8;
+	constexpr std::uintptr_t flameRadius = 0x3AC;
+	constexpr std::uintptr_t fuelPerSec = 0x3B0;
+	constexpr std::uintptr_t eyeTransform = 0x3B8;
+	constexpr std::uintptr_t damagePerSec = 0x3C0;
+	constexpr std::uintptr_t trigger = 0x3E0;
+}
+namespace guntrap
+{
+	constexpr std::uintptr_t gunfireeffect = 0x398;
+	constexpr std::uintptr_t bulletEffect = 0x3A0;
+	constexpr std::uintptr_t triggeredEffect = 0x3A8;
+	constexpr std::uintptr_t muzzlePos = 0x3B0;
+	constexpr std::uintptr_t eyeTransform = 0x3B8;
+	constexpr std::uintptr_t numPellets = 0x3C0;
+	constexpr std::uintptr_t aimCone = 0x3C4;
+	constexpr std::uintptr_t sensorRadius = 0x3C8;
+	constexpr std::uintptr_t ammoType = 0x3D0;
+	constexpr std::uintptr_t trigger = 0x3D8;
+}
+namespace BaseLauncher
+{
+	constexpr std::uintptr_t initialSpeedMultiplier = 0x4A8;
+}
+namespace StorageContainer
+{
+	constexpr std::uintptr_t inventorySlots = 0x310;
+	constexpr std::uintptr_t panelName = 0x320;
+	constexpr std::uintptr_t panelTitle = 0x328;
+	constexpr std::uintptr_t isLootable = 0x31D;
+	constexpr std::uintptr_t isLockable = 0x31E;
+	constexpr std::uintptr_t isMonitorable = 0x31F;
+	constexpr std::uintptr_t dropsLoot = 0x314;
+	constexpr std::uintptr_t dropLootDestroyPercent = 0x318;
+	constexpr std::uintptr_t allowedContents = 0x330;
+	constexpr std::uintptr_t allowedItem = 0x338;
+	constexpr std::uintptr_t maxStackSize = 0x358;
+	constexpr std::uintptr_t needsBuildingPrivilegeToUse = 0x35C;
+	constexpr std::uintptr_t onlyAcceptCategory = 0x388;
+	constexpr std::uintptr_t onlyOneUser = 0x38C;
+	constexpr std::uintptr_t dropPosition = 0x370;
+	constexpr std::uintptr_t dropVelocity = 0x37C;
+}
+namespace LootContainer
+{
+	constexpr std::uintptr_t destroyOnEmpty = 0x398;
+	constexpr std::uintptr_t lootDefinition = 0x3A0;
+	constexpr std::uintptr_t maxDefinitionsToSpawn = 0x3A8;
+	constexpr std::uintptr_t minSecondsBetweenRefresh = 0x3AC;
+	constexpr std::uintptr_t maxSecondsBetweenRefresh = 0x3B0;
+	constexpr std::uintptr_t initialLootSpawn = 0x3B4;
+	constexpr std::uintptr_t xpLootedScale = 0x3B8;
+	constexpr std::uintptr_t scrapAmount = 0x3C4;
+	constexpr std::uintptr_t LootSpawnSlots = 0x3D0;
+	constexpr std::uintptr_t SpawnType = 0x3D8;
+	constexpr std::uintptr_t clanScoreEventForFirstLooter = 0x3DC;
+}
+namespace OreResourceEntity
+{
+	constexpr std::uintptr_t bonusPrefab = 0x248;
+	constexpr std::uintptr_t finishEffect = 0x250;
+	constexpr std::uintptr_t bonusFailEffect = 0x258;
+	constexpr std::uintptr_t useHotspotMinigame = 0x260;
+	constexpr std::uintptr_t bonusSound = 0x268;
+	constexpr std::uintptr_t heightOffset = 0x270;
+}
+namespace ResourceEntity
+{
+	constexpr std::uintptr_t startHealth = 0x1F0;
+	constexpr std::uintptr_t baseProtection = 0x1F8;
+	constexpr std::uintptr_t skipDecorComponents = 0x204;
+}
+namespace CollectibleEntity
+{
+	constexpr std::uintptr_t itemName = 0x1F0;
+	constexpr std::uintptr_t itemList = 0x1F8;
+	constexpr std::uintptr_t pickupEffect = 0x200;
+	constexpr std::uintptr_t xpScale = 0x208;
+	constexpr std::uintptr_t suppressGatherRateMultiplier = 0x20C;
+}
+namespace GrowableEntity
+{
+	constexpr std::uintptr_t Properties = 0x338;
+	constexpr std::uintptr_t SourceItemDef = 0x340;
+	constexpr std::uintptr_t state = 0x348;
+	constexpr std::uintptr_t plantSkin = 0x2D8;
 }
 namespace PlayerCorpse
 {
+	constexpr std::uintptr_t playerName = 0x310;
+	constexpr std::uintptr_t playerSteamID = 0x308;
 	constexpr std::uintptr_t clientClothing = 0x340;
 }
 namespace LootableCorpse
@@ -647,8 +795,15 @@ namespace HackableLockedCrate
 }
 namespace HeldEntity
 {
-	constexpr std::uintptr_t ownerItemUID = 0x2D0;
 	constexpr std::uintptr_t viewModel = 0x2C8;
+	constexpr std::uintptr_t worldModelAnimation = 0x208;
+	constexpr std::uintptr_t handBone = 0x250;
+	constexpr std::uintptr_t holdInfo = 0x260;
+	constexpr std::uintptr_t isBuildingTool = 0x27C;
+	constexpr std::uintptr_t forcedOwner = 0x280;
+	constexpr std::uintptr_t hostileScore = 0x29C;
+	constexpr std::uintptr_t itemOwner = 0x1F0;
+	constexpr std::uintptr_t ownerItemUID = 0x2D0;
 	constexpr std::uint32_t viewModel_wrapper_kind = 0x4;
 	constexpr std::uint32_t viewModel_inner_off = 0x28;
 	constexpr std::uintptr_t _punches = 0x240;
@@ -737,7 +892,7 @@ namespace singleton_typeinfos
 }
 namespace TOD_Sky_Static
 {
-	constexpr std::uintptr_t tod_sky_c = 0x0;
+	constexpr std::uintptr_t tod_sky_c = 0xFC45770;
 	constexpr std::uintptr_t static_fields = 0xB8;
 	constexpr std::uintptr_t instances = 0x30;
 	constexpr std::uintptr_t instancesView = 0x30;
