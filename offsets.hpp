@@ -1,4 +1,5 @@
-// peekware dump generated on: 2026-08-07 07:56:26 PM UTC+3
+// game_base @ runtime: 0x7FF9540E0000  (image size 0x11B47000)
+// peekware dump generated on: 2026-08-08 08:14:34 PM UTC+3
 
 #include <cstdint>
 #include <cstring>
@@ -177,14 +178,17 @@ namespace base_networkable
 	constexpr std::uintptr_t wrapper_class_ptr = 0x8;
 	constexpr std::uintptr_t parent_static_fields = 0x10;
 	constexpr std::uintptr_t hv_offset = 0x18;
-	constexpr std::uintptr_t entities = 0x10;
+	constexpr std::uintptr_t entities = 0x20;
+	constexpr std::uint32_t buffer_list_array = 0x10;
 	constexpr std::uint32_t buffer_list_size = 0x18;
 	constexpr std::uintptr_t client_entities_decryption = 0x126B380;
 	constexpr std::uintptr_t entity_list_wrapper = 0x3B2ABD0;
 	constexpr std::uintptr_t entity_list_decryption = 0x1D99570;
-	constexpr std::uintptr_t entity = 0x0;
-	constexpr std::uintptr_t buffer = 0x0;
+	constexpr std::uintptr_t entity = 0x20;
+	constexpr std::uintptr_t buffer = 0x20;
 	constexpr std::uintptr_t prefabID = 0x54;
+	constexpr std::uintptr_t prefabName = 0x0;
+	constexpr std::uintptr_t prefabNameNoExt = 0x0;
 	constexpr std::uintptr_t parentEntity = 0x38;
 	constexpr std::uintptr_t children = 0x88;
 	constexpr std::uintptr_t net = 0x70;
@@ -202,13 +206,13 @@ namespace camera
 	constexpr std::uintptr_t entity = 0x10;
 	constexpr std::uintptr_t position = 0x444;
 	constexpr std::uintptr_t viewMatrix = 0x2FC;
-	constexpr std::uintptr_t projectionMatrix = 0xB0;
+	constexpr std::uintptr_t projectionMatrix = 0x18C;
 	constexpr std::uint32_t projection_layout = 0x1;
 	constexpr std::uintptr_t fieldOfView = 0x170;
 	constexpr std::uintptr_t aspect = 0x4E0;
 	constexpr std::uintptr_t nearClip = 0x430;
 	constexpr std::uintptr_t farClip = 0x458;
-	constexpr std::uintptr_t viewProjectionMatrix = 0x0;
+	constexpr std::uintptr_t viewProjectionMatrix = 0x2FC;
 	constexpr std::uintptr_t worldToCameraMatrix = 0x70;
 	constexpr std::uintptr_t cullingMask = 0x42C;
 }
@@ -222,7 +226,7 @@ namespace BasePlayer
 	constexpr std::uintptr_t player_model = 0x340;
 	constexpr std::uintptr_t playerFlags = 0x6D0;
 	constexpr std::uintptr_t userID = 0x718;
-	constexpr std::uintptr_t userIDString = 0x4e8;
+	constexpr std::uintptr_t userIDString = 0x0;
 	constexpr std::uintptr_t display_name = 0x390;
 	constexpr std::uintptr_t player_input = 0x3B8;
 	constexpr std::uintptr_t modelState = 0x2D0;
@@ -562,7 +566,7 @@ namespace PlayerModel
 	constexpr std::uintptr_t fullMask = 0x208;
 	constexpr std::uintptr_t position = 0x2F8;
 	constexpr std::uintptr_t newVelocity = 0x31C;
-	constexpr std::uintptr_t isNpc = 0x4cc;
+	constexpr std::uintptr_t isNpc = 0x0;
 	constexpr std::uintptr_t visibleNullable = 0xC4;
 }
 namespace SkinnedMultiMesh
@@ -695,9 +699,9 @@ namespace bradleyapc
 }
 namespace local_player_static
 {
-	constexpr std::uintptr_t local_player = 0x107D2EF8;
+	constexpr std::uintptr_t local_player = 0x1079F8D8;
 	constexpr std::uintptr_t static_fields = 0xB8;
-	constexpr std::uintptr_t entity = 0x8;
+	constexpr std::uintptr_t entity = 0x10;
 	constexpr std::uintptr_t hv_in_wrapper = 0x0;
 	constexpr std::uint32_t is_wrapped = 0x1;
 }
@@ -890,6 +894,25 @@ namespace model
 	constexpr std::uintptr_t boneTransforms = 0x50;
 	constexpr std::uintptr_t boneNames = 0x58;
 	constexpr std::uintptr_t bone_transform = 0x50;
+	constexpr std::uintptr_t pelvis_bone_idx = 0x0;
+	constexpr std::uintptr_t l_hip_bone_idx = 0x0;
+	constexpr std::uintptr_t l_knee_bone_idx = 0x0;
+	constexpr std::uintptr_t l_foot_bone_idx = 0x0;
+	constexpr std::uintptr_t r_hip_bone_idx = 0x0;
+	constexpr std::uintptr_t r_knee_bone_idx = 0x0;
+	constexpr std::uintptr_t r_foot_bone_idx = 0x0;
+	constexpr std::uintptr_t spine2_bone_idx = 0x0;
+	constexpr std::uintptr_t spine4_bone_idx = 0x0;
+	constexpr std::uintptr_t l_clavicle_bone_idx = 0x0;
+	constexpr std::uintptr_t l_upperarm_bone_idx = 0x0;
+	constexpr std::uintptr_t l_forearm_bone_idx = 0x0;
+	constexpr std::uintptr_t l_hand_bone_idx = 0x0;
+	constexpr std::uintptr_t r_clavicle_bone_idx = 0x0;
+	constexpr std::uintptr_t r_upperarm_bone_idx = 0x0;
+	constexpr std::uintptr_t r_forearm_bone_idx = 0x0;
+	constexpr std::uintptr_t r_hand_bone_idx = 0x0;
+	constexpr std::uintptr_t neck_bone_idx = 0x0;
+	constexpr std::uintptr_t head_bone_idx = 0x0;
 	constexpr std::uintptr_t bone_array_count_off = 0x18;
 	constexpr std::uintptr_t bone_array_data_off = 0x20;
 	constexpr std::uintptr_t bone_array_elem_size = 0x8;
